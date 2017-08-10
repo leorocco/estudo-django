@@ -21,4 +21,4 @@ def product (request, slug):
     context = {
         'product' : product
     }
-    return render(request, 'catalogo/product.html', contexts)
+    return render(request, 'catalogo/product.html', context)
