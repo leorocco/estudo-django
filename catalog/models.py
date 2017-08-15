@@ -18,7 +18,7 @@ class Category(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        return self.name
+        return self.name.encode('utf8')
 
     def get_absolute_url(self):
         return reverse('catalog:category', kwargs={'slug': self.slug})
@@ -40,7 +40,7 @@ class Product(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        return self.name
+        return self.name.encode('utf8')
 
     def get_absolute_url(self):
         return reverse('catalog:product', kwargs={'slug':self.slug})
