@@ -142,7 +142,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 #E-Mail
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'leeo.rocco@gmail.com'
-EMAIL_HOST_PASSWORD = '2leotenere2013'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
 EMAIL_USE_TLS = True
