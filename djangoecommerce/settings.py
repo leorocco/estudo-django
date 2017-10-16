@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'flat_responsive',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     #Apps
     'core',
     'catalog',
+    'accounts',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -147,6 +149,12 @@ EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
 EMAIL_USE_TLS = True
 
+#auth
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_URL = 'logout'
+
+AUTH_USER_MODEL = 'accounts.User'
 
 try:
     from .local_settings import *
